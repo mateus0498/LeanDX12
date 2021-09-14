@@ -12,7 +12,7 @@ Em caso de dúvidas utilize como ponto de partida os códigos de exemplo forneci
     
     <img src="Images/HelloTriangle.png" height="300">
     
-1. [Virtual Camera](Samples/LDX12VirtualCamera): Uso da função LoadWavefrontOBJ para carregar arquivo .obj contendo as informações dos vértices de um modelo de uma pistola *Desert Eagle*. Implementação de uma câmera virtual, transformando o espaço do mundo no espaço projetivo por através de matrizes de translação, rotação, entre outras.
+1. [Virtual Camera](Samples/LDX12VirtualCamera): Uso da função LoadWavefrontOBJ para carregar arquivo .obj contendo as informações dos vértices de um modelo de uma pistola *Desert Eagle*. Implementação de uma câmera virtual, transformando o espaço do mundo no espaço projetivo através de matrizes de translação, rotação, entre outras.
     
     <img src="Images/VirtualCamera.png" height="300">
     
