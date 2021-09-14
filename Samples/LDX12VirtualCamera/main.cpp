@@ -1,11 +1,8 @@
 // Autor: Mateus Ferreira da Silva
 // Ano  : 2021
-// DescriÁ„o: LeanDX12 Virtual Camera Sample
+// Descri√ß√£o: LeanDX12 Virtual Camera Sample
 
 #include <iostream>
-#include <vector>
-#include <string>
-#include <fstream>
 #include <DirectXMath.h>
 #include "LeanDX12.h"
 
@@ -23,8 +20,8 @@ Buffer** WVPBuffers;
 Buffer* uploadWVPBuffer;
 unsigned int numWVPBuffers;
 
-// Matrizes utilizadas pelo pipeline gr·fico (checar VertexShader.hlsl) para transformar as coordenadas dos objetos do espaÁo do mundo
-// para o espaÁo projetivo.
+// Matrizes utilizadas pelo pipeline gr√°fico (checar VertexShader.hlsl) para transformar as coordenadas dos objetos do espa√ßo do mundo
+// para o espa√ßo projetivo.
 struct WorldViewProjection
 {
 	XMMATRIX scaling;
@@ -35,8 +32,8 @@ struct WorldViewProjection
 	XMMATRIX projection;
 };
 
-// FunÁ„o para definir a posiÁ„o e a orientaÁ„o da c‚mera no espaÁo do mundo.
-// TransformaÁ„o do espaÁo do mundo no espaÁo da c‚mera virtual utilizando projeÁ„o perspectiva.
+// Fun√ß√£o para definir a posi√ß√£o e a orienta√ß√£o da c√¢mera no espa√ßo do mundo.
+// Transforma√ß√£o do espa√ßo do mundo no espa√ßo da c√¢mera virtual utilizando proje√ß√£o perspectiva.
 void SetCamera(
 	float position[3], float rotation[3],
 	float fovAngleY, float aspectRatio, float nearClippingPlane, float farClippingPlane)
@@ -46,8 +43,8 @@ void SetCamera(
 	projection = XMMatrixPerspectiveFovLH(fovAngleY * XM_PI / 180.0f, aspectRatio, nearClippingPlane, farClippingPlane);
 }
 
-// FunÁ„o para definir a posiÁ„o e a orientaÁ„o de um objeto no espaÁo do mundo.
-// … possÌvel definir tambÈm aumentar ou diminuir a escala do objeto em cada um dos eixos coordenados.
+// Fun√ß√£o para definir a posi√ß√£o e a orienta√ß√£o de um objeto no espa√ßo do mundo.
+// √â poss√≠vel definir tamb√©m aumentar ou diminuir a escala do objeto em cada um dos eixos coordenados.
 void SetObject(float position[3], float rotation[3], float scale[3], unsigned int wvpConstantBufferIndex)
 {
 	WorldViewProjection wvp;
