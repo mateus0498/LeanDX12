@@ -18,7 +18,7 @@ Em caso de dúvidas utilize como ponto de partida os códigos de exemplo forneci
     
 1. [Phong Illumination Model](Samples/LDX12PhongIllumination): Implementação do Modelo de Iluminação de Phong no Pixel Shader. Uso do algoritmo de interpolação Blinn-Phong (semelhante ao *Gouraud Shading*, entretanto o Blinn-Phong interpola os vetores normais dos vértices para estimar os vetores normais dos pontos da malha poligonal ao passo que o Gouraud interpola as cores dos vértices). A iluminação na cena foi computada da seguinte forma:
 
-![image](https://user-images.githubusercontent.com/48290411/133956745-25600069-3cbb-4aad-baf1-2bfd527fd1ab.png)
+![image](https://user-images.githubusercontent.com/48290411/133957350-fe9315d7-c06a-4fc8-ade1-267f3de0cffc.png)
 
 Imagens geradas:
 
